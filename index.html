@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Accommodation Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Cork Accommodation</h1>
+            <nav>
+                <ul>
+                    <li><a href="#short-term">Short-Term</a></li>
+                    <li><a href="#long-term">Long-Term</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="intro">
+            <div class="container">
+                <h2>Welcome to Our Accommodation</h2>
+                <p>Your comfort is our priority. Explore our short-term and long-term accommodations below.</p>
+            </div>
+        </section>
+
+        <section id="short-term">
+            <div class="container">
+                <h2>Short-Term Accommodation</h2>
+                <div class="gallery">
+                    <img src="short1.jpg" alt="Short-Term Accommodation 1" onclick="openModal(this)">
+                    <img src="short2.jpg" alt="Short-Term Accommodation 2" onclick="openModal(this)">
+                    <img src="short3.jpg" alt="Short-Term Accommodation 3" onclick="openModal(this)">
+                </div>
+                <p>Enjoy our well-furnished short-term accommodations with all modern amenities.</p>
+                <div class="contact-buttons">
+                    <a href="https://wa.me/+353872603139" class="btn" target="_blank"><i class="fab fa-whatsapp"></i> Enquire on WhatsApp</a>
+                    <a href="weixin://dl/chat?wxid_igz8fg572z0622" class="btn" target="_blank"><i class="fab fa-weixin"></i> Enquire on WeChat</a>
+                </div>
+                <p>To book, please contact us through the methods above. Payment can be made via bank transfer or PayPal.</p>
+            </div>
+        </section>
+
+        <section id="long-term">
+            <div class="container">
+                <h2>Long-Term Accommodation</h2>
+                <div class="gallery">
+                    <img src="long1.jpg" alt="Long-Term Accommodation 1" onclick="openModal(this)">
+                    <img src="long2.jpg" alt="Long-Term Accommodation 2" onclick="openModal(this)">
+                    <img src="long3.jpg" alt="Long-Term Accommodation 3" onclick="openModal(this)">
+                </div>
+                <p>Our long-term accommodations are perfect for students, offering a comfortable and conducive environment for study.</p>
+                <div class="contact-buttons">
+                    <a href="https://wa.me/+353872603139" class="btn" target="_blank"><i class="fab fa-whatsapp"></i> Enquire on WhatsApp</a>
+                    <a href="weixin://dl/chat?wxid_igz8fg572z0622" class="btn" target="_blank"><i class="fab fa-weixin"></i> Enquire on WeChat</a>
+                </div>
+                <p>To book, please contact us through the methods above. Payment can be made via bank transfer or PayPal.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form action="mailto:info@accommodation.com" method="post" enctype="text/plain">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    
+                    <button type="submit" class="btn">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Contact us at: <a href="mailto:info@accommodation.com">info@accommodation.com</a></p>
+            <p>Follow us on social media:</p>
+            <a href="YOUR_FACEBOOK_LINK" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="YOUR_INSTAGRAM_LINK" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
